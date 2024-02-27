@@ -28,11 +28,18 @@
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.
+                Memories to Last a Lifetime: InterRail isn't just a journey—it's a collection of moments that will stay with you long after 
+                you've returned home. Whether it's watching the sunset over the Mediterranean, 
+                stumbling upon a hidden gem in a picturesque village, or simply sharing a laugh with newfound friends, 
+                every experience is a cherished memory in the making.
             </p>
 
-            <p class="font-extrabold text-gray-600 text-s pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente magnam vero nostrum! Perferendis eos molestias porro vero. Vel alias.
+            <p class="py-8 text-gray-500 text-s">
+                InterRail isn't just about the destinations—it's about the journey. 
+                Along the way, you'll meet fellow travelers from all walks of life,
+                 each with their own stories to share. 
+                 Whether you're swapping travel tips over a meal or marveling at the passing scenery together, 
+                 the connections you make on the train are part of what makes the InterRail experience so special.
             </p>
 
             <a 
@@ -43,24 +50,7 @@
         </div>
     </div>
 
-    <div class="text-center p-15 bg-black text-white">
-        <h2 class="text-2xl pb-5 text-l"> 
-            I'm an expert in...
-        </h2>
 
-        <span class="font-extrabold block text-4xl py-1">
-            Ux Design
-        </span>
-        <span class="font-extrabold block text-4xl py-1">
-            Project Management
-        </span>
-        <span class="font-extrabold block text-4xl py-1">
-            Digital Strategy
-        </span>
-        <span class="font-extrabold block text-4xl py-1">
-            Backend Development
-        </span>
-    </div>
 
     <div class="text-center py-15">
         <span class="uppercase text-s text-gray-400">
