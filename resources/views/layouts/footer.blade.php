@@ -1,5 +1,5 @@
-<footer class="bg-gray-800 py-20 mt-20">
-    <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-gray-700">
+<footer class="bg-pink-900 py-20 mt-20">
+    <div class="sm:grid grid-cols-3 w-4/5 pb-10 m-auto border-b-2 border-fuchsia-500">
         <div>
             <h3 class="text-l sm:font-bold text-gray-100">
                 Pages
@@ -65,29 +65,29 @@
 
             <ul class="py-4 sm:text-s pt-4 text-gray-400">
                 <li class="pb-1">
-                    <a href="/">
-                        Why we love tech
+                    <a href="/blog/why-we-love-interrail">
+                       Why We Love InterRail
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why we love design
+                     Night Trains Do and Don't
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why to use Laravel
+                        How to Plan Your Route
                     </a>
                 </li>
                 <li class="pb-1">
                     <a href="/">
-                        Why PHP is the best
+                       What InterRali/EuroRail ticket is best for you
                     </a>
                 </li>
             </ul>
         </div>
     </div>
     <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6">
-        Copyright 2017-2021 Code With Dary. All Rights Reserved
+        Copyright 2024. All Rights Reserved
     </p>
 </footer>
