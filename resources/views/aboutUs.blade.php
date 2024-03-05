@@ -4,7 +4,7 @@
     <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm: text-orange-300 text-5xl uppercase font-bold text-shadow-md pb-14">
+                <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
                     Do you want explore Europe?
                 </h1>
                 <a 
@@ -67,33 +67,22 @@
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="flex bg-orange-300 text-teal-700 pt-10">
-           
-        
-    
-                <ul class="py-4 sm:text-s pt-4 text-teal-700">
-                    <li class="pb-1">
-                        <a href="/blog/why-we-love-interrail-2">
-                           Why We Love InterRail
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/blog/night-trains-do-and-don-t">
-                         Night Trains Do and Don't
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/">
-                            How to Plan Your Route
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/">
-                           What InterRali/EuroRail ticket is best for you
-                        </a>
-                    </li>
-                </ul>
-           
+        <div class="flex bg-yellow-700 text-gray-100 pt-10">
+            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
+                <span class="uppercase text-xs">
+                    PHP
+                </span>
+
+                <h3 class="text-xl font-bold py-10">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas necessitatibus dolorum error culpa laboriosam. Enim voluptas earum repudiandae consequuntur ad? Expedita labore aspernatur facilis quasi ex? Nemo hic placeat et?
+                </h3>
+
+                <a 
+                    href=""
+                    class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
+                    Find Out More
+                </a>
+            </div>
         </div>
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
