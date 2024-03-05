@@ -16,11 +16,12 @@
         </div>
     </div>
 
+   
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        <div>
+        
             <img src="https://i.guim.co.uk/img/media/10ca7d94797154abad498bb78db212e4ab93e5f0/0_212_5368_3221/master/5368.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7feebf18676b24fa8484899ccb1cff01" width="700" alt="">
             
-        </div>
+      
 
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
@@ -48,7 +49,12 @@
                 Find Out More
             </a>
         </div>
+
+        
     </div>
+    <div class="flex justify-center mt-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
 
 
