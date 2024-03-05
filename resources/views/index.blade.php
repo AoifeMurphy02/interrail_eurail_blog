@@ -67,7 +67,7 @@
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="flex bg-orange-300 text-teal-700 pt-10">
+        <div class="text-center py-15 bg-orange-300 text-teal-700 pt-10">
            
         
     

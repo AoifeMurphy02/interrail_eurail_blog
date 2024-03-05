@@ -16,7 +16,7 @@ use App\Http\Controllers\PostsController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
-
+Route::get('/aboutUs', [PagesController::class, 'aboutUs']);
 Route::resource('/blog', PostsController::class);
 
 Auth::routes();
@@ -26,4 +26,6 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 

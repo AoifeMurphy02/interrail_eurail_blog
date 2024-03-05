@@ -28,7 +28,7 @@
                 <nav class="space-x-4 text-orange-300 text-sm sm:text-base">
                     <a class="no-underline hover:underline" href="/">Home</a>
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
-                   
+                    <a class="no-underline hover:underline" href="/aboutUs" >About Us</a>
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
@@ -45,7 +45,7 @@
                             {{ csrf_field() }}
                         </form>
                     @endguest
-                    <a class="no-underline hover:underline" href="/aboutUs" >About Us</a>
+                    
                 </nav>
             </div>
         </header>
