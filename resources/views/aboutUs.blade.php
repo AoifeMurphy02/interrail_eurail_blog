@@ -1,16 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
-        <div class="flex text-gray-100 pt-10">
-            <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm: text-orange-300 text-5xl uppercase font-bold text-shadow-md pb-14">
-                  About us
-                </h1>
-                
-            </div>
-        </div>
-    </div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
@@ -22,19 +12,35 @@
                 Hey guys!
             </h2>
             <p class="py-8 text-gray-500 text-s">
-                Upon returning from a summer filled with enriching experiences and unforgettable moments shared with friends, I was inspired to embark on a new endeavor. Motivated by a passion for exploration and a desire to connect with fellow adventurers, I envisioned creating a comprehensive platform—a virtual haven where individuals could converge to exchange invaluable insights, advice, and tips tailored specifically for those eager to explore the enchanting continent of Europe.
+                Upon returning from a summer filled with enriching experiences and unforgettable 
+                moments shared with friends, I was inspired to embark on a new endeavor. 
+                Motivated by a passion for exploration and a desire to connect with fellow adventurers.
+            </p>
+            <p class="py-8 text-gray-500 text-s">
+                I envisioned creating a comprehensive platform—a virtual haven where individuals could converge to exchange 
+                invaluable insights, advice, and tips tailored specifically for those eager to explore the enchanting continent of Europe.
 
          </p>
             <p class="py-8 text-gray-500 text-s">
-                Driven by a deep-seated enthusiasm for travel and a belief in the transformative power of shared experiences, I set out to establish a one-stop-shop—a digital sanctuary designed to cater to the diverse needs and aspirations of budding explorers and seasoned adventurers alike. With a focus on fostering a vibrant community spirit and facilitating meaningful interactions, my goal was to curate a repository of knowledge, insights, and practical wisdom sourced directly from the collective experiences of fellow travelers.
-
-                Recognizing the boundless potential for discovery and the myriad of adventures awaiting discovery across Europe's picturesque landscapes and culturally rich destinations, I sought to create a platform that would serve as a beacon of inspiration and a trusted resource for anyone with a thirst for adventure and a curiosity to explore beyond their comfort zones.
+                Driven by a deep-seated enthusiasm for travel and a belief in the transformative power of shared experiences, 
+                I set out to establish a one-stop-shop—a digital sanctuary designed to cater to the diverse needs and aspirations
+                 of budding explorers and seasoned adventurers alike.
+            </p>
+            <p class="py-8 text-gray-500 text-s">
+             With a focus on fostering a vibrant community spirit and facilitating meaningful 
+                 interactions, my goal was to curate a repository of knowledge, insights, 
+                 and practical wisdom sourced directly from the collective experiences of fellow travelers.
+            </p>
+            <p class="py-8 text-gray-500 text-s">
+                Recognizing the boundless potential for discovery and the myriad of adventures awaiting discovery across Europe's 
+                picturesque landscapes and culturally rich destinations, I sought to create a platform that would serve as a beacon of inspiration 
+                and a trusted resource for anyone with a thirst for adventure and a curiosity to explore beyond their comfort zones.
                    
             </p>
 
             <a 
                 href="/blog"
-                class="uppercase bg-orange-300 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
+                class="uppercase bg-orange-300 text-gray-100  text-s font-extrabold py-3 px-8 rounded-3xl">
                 Find Out More
             </a>
         </div>
@@ -62,6 +68,7 @@
         
     
                 <ul class="py-4 sm:text-s pt-4 text-teal-700">
+                    
                     <li class="pb-1">
                         <a href="/blog/why-we-love-interrail-2">
                            Why We Love InterRail
@@ -86,7 +93,7 @@
            
         </div>
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+            <img src="https://eamondelaney.files.wordpress.com/2018/06/interrail-social.jpg" alt="">
         </div>
     </div>
 @endsection
