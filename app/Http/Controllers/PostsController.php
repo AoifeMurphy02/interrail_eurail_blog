@@ -98,24 +98,27 @@ class PostsController extends Controller
      * @param  string  $slug
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $slug)
-    {
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
+    // Update the specified resource in storage.
+public function update(Request $request, $slug)
+{
+    $request->validate([
+        'title' => 'required',
+        'description' => 'required',
+        'blog_body' => 'required',
+    ]);
+
+    Post::where('slug', $slug)
+        ->update([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'blog_body' => $request->input('blog_body'), // Include blog_body in the update
+            'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
+            'user_id' => auth()->user()->id
         ]);
 
-        Post::where('slug', $slug)
-            ->update([
-                'title' => $request->input('title'),
-                'description' => $request->input('description'),
-                'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
-                'user_id' => auth()->user()->id
-            ]);
-
-        return redirect('/blog')
-            ->with('message', 'Your post has been updated!');
-    }
+    return redirect('/blog')
+        ->with('message', 'Your post has been updated!');
+}
 
     /**
      * Remove the specified resource from storage.
