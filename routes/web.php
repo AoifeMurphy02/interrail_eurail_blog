@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\MapController;
-
+use App\Http\Controllers\SliderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,3 +30,4 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::get('/map', [\App\Http\Controllers\MapController::class, 'index']);
 
+Route::get('sliders', [SliderController::class, 'index']);
