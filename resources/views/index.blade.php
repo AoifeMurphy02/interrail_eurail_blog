@@ -18,11 +18,8 @@
 
    
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-        
-            <img src="https://i.guim.co.uk/img/media/10ca7d94797154abad498bb78db212e4ab93e5f0/0_212_5368_3221/master/5368.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7feebf18676b24fa8484899ccb1cff01" width="700" alt="">
-            
-      
-
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
                 Thinking of Exploing Europe by train?
@@ -34,7 +31,6 @@
                 stumbling upon a hidden gem in a picturesque village, or simply sharing a laugh with newfound friends, 
                 every experience is a cherished memory in the making.
             </p>
-
             <p class="py-8 text-gray-500 text-s">
                 InterRail isn't just about the destinations—it's about the journey. 
                 Along the way, you'll meet fellow travelers from all walks of life,
@@ -45,17 +41,14 @@
 
             <a 
                 href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
+                class="uppercase  bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
                 Find Out More
             </a>
         </div>
 
         
     </div>
-    <div class="flex justify-center mt-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-
+    
 
 
     <div class="text-center py-15">
