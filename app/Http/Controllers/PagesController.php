@@ -24,5 +24,13 @@ class PagesController extends Controller
         // Pass the $sliders variable to the view
         return view('aboutUs', ['sliders' => $sliders]);
     }
+    public function gallery()
+    {
+        // Retrieve sliders data from the database or any other source
+        $sliders = Slider::all(); // Assuming Slider is your model and you want to retrieve all sliders
+    
+        // Pass the $sliders variable to the view
+        return view('gallery', ['sliders' => $sliders]);
+    }
     
 }

@@ -31,6 +31,7 @@
                     <a class="no-underline hover:underline" href="/blog">Blog</a>
                     <a class="no-underline hover:underline" href="/aboutUs" >About Us</a>
                     <a class="no-underline hover:underline" href="/map" >Map</a>
+                    <a class="no-underline hover:underline" href="/gallery" >Gallery</a>
                  
                     @guest
                         <a class="no-underline hover:underline" href="{{ route('login') }}">{{ __('Login') }}</a>
