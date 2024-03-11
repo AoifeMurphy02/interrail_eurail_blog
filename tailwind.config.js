@@ -4,7 +4,11 @@ module.exports = {
     './resources/css/**/*.css',
   ],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: ['Kalam', 'sans-serif'],
+      },
+    },
   },
   variants: {},
   plugins: [

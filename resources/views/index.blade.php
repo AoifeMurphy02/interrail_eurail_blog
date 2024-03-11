@@ -61,39 +61,35 @@
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
+            Feel free to peruse through a selection of our most sought-after posts.
         </p>
     </div>
 
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
         <div class="text-center py-15 bg-orange-300 text-teal-700 pt-10">
-           
-        
-    
-                <ul class="py-4 sm:text-s pt-4 text-teal-700">
-                    <li class="pb-1">
-                        <a  href="/blog/why-we-love-interrail-2">
-                           Why We Love InterRail
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/blog/night-trains-do-and-don-t">
-                         Night Trains Do and Don't
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/">
-                            How to Plan Your Route
-                        </a>
-                    </li>
-                    <li class="pb-1">
-                        <a href="/">
-                           What InterRali/EuroRail ticket is best for you
-                        </a>
-                    </li>
-                </ul>
-           
-        </div>
+            <ul class="py-4 sm:text-s pt-4 text-teal-700">
+                <li class="pb-4"> <!-- Adjusted padding -->
+                    <a href="/blog/why-we-love-interrail-2">
+                        Why We Love InterRail
+                    </a>
+                </li>
+                <li class="pb-4"> <!-- Adjusted padding -->
+                    <a href="/blog/night-trains-do-and-don-t">
+                        Night Trains Do and Don't
+                    </a>
+                </li>
+                <li class="pb-4"> <!-- Adjusted padding -->
+                    <a href="/">
+                        How to Plan Your Route
+                    </a>
+                </li>
+                <li class="pb-4"> <!-- Adjusted padding -->
+                    <a href="/">
+                        What InterRali/EuroRail ticket is best for you
+                    </a>
+                </li>
+            </ul>
+        </div>   
         <div>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
