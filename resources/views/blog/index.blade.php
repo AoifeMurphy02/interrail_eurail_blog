@@ -30,6 +30,20 @@
     <div class="my-8"></div>
 @endif
 
+<div class="w-4/5 m-auto pt-4">
+    <form action="{{ route('posts.search') }}" method="GET">
+        <input 
+            type="text" 
+            name="search" 
+            class="bg-gray-200 rounded-full w-3/4 py-3 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+            placeholder="Search by title...">
+        <button 
+            type="submit" 
+            class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Search
+        </button>
+    </form>
+</div>
+
 <div class="sm:grid grid-cols-1 md:grid-cols-3 gap-20 w-4/5 mx-auto py-15">
 @foreach ($posts as $post)
     <div class="border border-gray-200 rounded-lg">
@@ -37,22 +51,22 @@
             <img src="{{ asset('images/' . $post->image_path) }}" alt="" class="w-full h-64 object-cover">
         </div>
         <div class="p-6">
-            <h2 class="text-gray-700 font-bold text-xl pb-4">
+            <h2 class="text-teal-700 font-bold text-xl pb-4">
                 {{ $post->title }}
             </h2>
 
-            <span class="text-gray-500">
-                By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
+            <span class="">
+                By <span class="font-bold italic text-orange-300">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
             </span>
 
-            <p class="text-base text-gray-700 pt-4 pb-6 leading-7 font-light">
+            <p class="text-base  pt-4 pb-6 leading-7 font-light">
                 {{ $post->description }}
             </p>
             
             <a href="/blog/{{ $post->slug }}"  class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
                 Keep Reading
             </a>
-
+            <div class="my-8"></div>
             @if (isset(Auth::user()->id) && Auth::user()->id == $post->user_id)
                 <div class="pt-4">
                     <a 

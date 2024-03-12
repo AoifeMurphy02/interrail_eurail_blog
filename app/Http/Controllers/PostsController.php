@@ -18,11 +18,26 @@ class PostsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('blog.index')
-            ->with('posts', Post::orderBy('updated_at', 'DESC')->get());
-    }
+   
+     public function index(Request $request)
+     {
+         $search = $request->query('search');
+         
+         $posts = Post::orderBy('updated_at', 'DESC');
+ 
+         if ($search) {
+             $posts->where('title', 'like', '%' . $search . '%');
+         }
+ 
+         $posts = $posts->get();
+ 
+         return view('blog.index')->with('posts', $posts);
+     }
+    
+
+    
+
+    
 
     /**
      * Show the form for creating a new resource.
@@ -74,10 +89,15 @@ class PostsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($slug)
-    {
-        return view('blog.show')
-            ->with('post', Post::where('slug', $slug)->first());
+{
+    $post = Post::where('slug', $slug)->first();
+
+    if (!$post) {
+        return redirect()->route('posts.index')->with('error', 'Post not found.');
     }
+
+    return view('blog.show')->with('post', $post);
+}
 
     /**
      * Show the form for editing the specified resource.

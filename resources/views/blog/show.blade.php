@@ -17,22 +17,22 @@
                 </div>
 
                 <div class="w-1/2 pl-5">
-                    <p class="text-xl text-gray-700 pb-10 leading-8 font-light">
+                    <p class="text-xl  pb-10 leading-8 font-light">
                         {{ $post->description }}
                     </p>
                 </div>
             </div>
 
             <div class="w-full">
-                <p class="text-xl text-gray-700 leading-8 font-light">
+                <p class="text-xl  leading-8 font-light">
                     {!! nl2br(e($post->blog_body)) !!}
                 </p>
             </div>
         </div>
 
         <div class="w-4/5 m-auto pt-20">
-            <span class="text-gray-500">
-                By <span class="font-bold italic text-teal-700">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
+            <span class="">
+                By <span class="font-bold italic text-orange-300">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
             </span>
         </div>
     </div>

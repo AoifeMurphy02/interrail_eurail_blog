@@ -19,7 +19,9 @@ use App\Http\Controllers\SliderController;
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/aboutUs', [PagesController::class, 'aboutUs']);
 Route::get('/gallery', [PagesController::class, 'gallery']);
-Route::resource('/blog', PostsController::class);
+Route::get('/blog/search', [PostsController::class, 'index'])->name('posts.search');
+
+Route::get('/blog', [PostsController::class, 'index'])->name('posts.index');
 
 Auth::routes();
 

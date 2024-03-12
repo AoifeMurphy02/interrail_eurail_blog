@@ -23,17 +23,17 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       
         <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-3xl font-extrabold text-gray-600">
+            <h2 class="text-3xl font-extrabold ">
                 Thinking of Exploring Europe by train?
             </h2>
             
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8  text-s">
                 Memories to Last a Lifetime: InterRail isn't just a journey—it's a collection of moments that will stay with you long after 
                 you've returned home. Whether it's watching the sunset over the Mediterranean, 
                 stumbling upon a hidden gem in a picturesque village, or simply sharing a laugh with newfound friends, 
                 every experience is a cherished memory in the making.
             </p>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8  text-s">
                 InterRail isn't just about the destinations—it's about the journey. 
                 Along the way, you'll meet fellow travelers from all walks of life,
                  each with their own stories to share. 
@@ -55,7 +55,7 @@
             Recent Posts
         </h2>
         <div class="my-8"></div>
-        <p class="m-auto w-4/5 text-gray-500">
+        <p class="m-auto w-4/5 ">
             Feel free to peruse through a selection of our most sought-after posts.
         </p>
         <div class="my-8"></div>
@@ -69,8 +69,8 @@
                 </div>
                 <div class="p-6">
                     <h2 class="text-gray-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
-                    <span class="text-gray-500">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
-                    <p class="text-base text-gray-700 pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
+                    <span class="">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
+                    <p class="text-base pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
                     <a href="/blog/{{ $post->slug }}" class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
                 </div>
             </div>
