@@ -8,10 +8,11 @@ module.exports = {
       fontFamily: {
         sans: ['Kalam', 'sans-serif'],
       },
-    },
+      
   },
   variants: {},
   plugins: [
     require('@tailwindcss/ui'),
   ]
+  }
 }

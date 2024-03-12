@@ -1,20 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+
     <div class="background-image grid grid-cols-1 m-auto">
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
-                <h1 class="sm: text-gray-60 text-5xl uppercase font-bold text-shadow-md pb-14">
+                <h1 class="sm:text-5xl uppercase font-bold pb-14 text-orange-300 drop-shadow-md" style="filter: drop-shadow(0 0 10px rgba(8, 8, 8, 0.8));">
                     Do you want explore Europe?
                 </h1>
                 <a 
                     href="/blog"
-                    class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
+                    class="text-center uppercase  bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
                     Read More
                 </a>
             </div>
         </div>
     </div>
+    <div class="my-8"></div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -45,6 +47,7 @@
             </a>
         </div>
     </div>
+    <div class="my-8"></div>
 
     <div class="text-center py-15">
         <h2 class="text-4xl font-bold py-10">

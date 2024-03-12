@@ -13,6 +13,14 @@
     background-size: cover;
     height: 230px;
 }
+
+.login-background-image 
+{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/58/1799_Clement_Cruttwell_Map_of_Europe_-_Geographicus_-_Europe-cruttwell-1799.jpg');
+    background-size: cover;
+        background-position: center;
+   
+}
 #map {
     width: 100%;
     height: 900px;

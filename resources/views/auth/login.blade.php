@@ -4,7 +4,8 @@
 <main class="sm:container  sm:mx-auto sm:max-w-lg sm:mt-10">
     <div class="flex">
         <div class="w-full ">
-            <section class="flex flex-col break-words bg-orange-200 sm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
+            
+            <section class="flex-col break-words login-background-image grid grid-cols-1 m-autosm:border-1 sm:rounded-md sm:shadow-sm sm:shadow-lg">
 
                 <header class="font-semibold bg-orange-300  text-teal-700 py-5 px-6 sm:py-6 sm:px-8 sm:rounded-t-md">
                     {{ __('Login') }}
@@ -53,7 +54,7 @@
                         </label>
 
                         @if (Route::has('password.request'))
-                        <a class="text-sm text-blue-500 hover:text-blue-700 whitespace-no-wrap no-underline hover:underline ml-auto"
+                        <a class="text-sm text-teal-800 hover:text-teal-700  whitespace-no-wrap no-underline hover:underline ml-auto"
                             href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
                         </a>
@@ -62,7 +63,7 @@
 
                     <div class="flex flex-wrap">
                         <button type="submit"
-                        class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-teal-700 hover:bg-orange-300 sm:py-4">
+                        class="w-full select-none font-bold whitespace-no-wrap p-3 rounded-lg text-base leading-normal no-underline text-gray-100 bg-teal-700 hover:bg-teal-800 sm:py-4">
                             {{ __('Login') }}
                         </button>
 

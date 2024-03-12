@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="my-8"></div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200 ">
         <div>
@@ -8,30 +9,30 @@
         </div>
     
         <div class="m-auto sm:m-auto text-left w-4/5 block border-8  border-orange-200 bg-orange-200">
-            <h2 class="text-3xl font-extrabold text-gray-600  ">
+            <h2 class="text-3xl font-extrabold text-teal-700 ">
                 Hey guys!
             </h2>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8 text-teal-700 text-s">
                 Upon returning from a summer filled with enriching experiences and unforgettable 
                 moments shared with friends, I was inspired to embark on a new endeavor. 
                 Motivated by a passion for exploration and a desire to connect with fellow adventurers.
             </p>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8 text-teal-700 text-s">
                 I envisioned creating a comprehensive platform—a virtual haven where individuals could converge to exchange 
                 invaluable insights, advice, and tips tailored specifically for those eager to explore the enchanting continent of Europe.
 
          </p>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8 text-teal-700 text-s">
                 Driven by a deep-seated enthusiasm for travel and a belief in the transformative power of shared experiences, 
                 I set out to establish a one-stop-shop—a digital sanctuary designed to cater to the diverse needs and aspirations
                  of budding explorers and seasoned adventurers alike.
             </p>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8 text-teal-700 text-s">
              With a focus on fostering a vibrant community spirit and facilitating meaningful 
                  interactions, my goal was to curate a repository of knowledge, insights, 
                  and practical wisdom sourced directly from the collective experiences of fellow travelers.
             </p>
-            <p class="py-8 text-gray-500 text-s">
+            <p class="py-8 text-teal-700 text-s">
                 Recognizing the boundless potential for discovery and the myriad of adventures awaiting discovery across Europe's 
                 picturesque landscapes and culturally rich destinations, I sought to create a platform that would serve as a beacon of inspiration 
                 and a trusted resource for anyone with a thirst for adventure and a curiosity to explore beyond their comfort zones.
@@ -45,6 +46,8 @@
             </a>
         </div>
     </div>
+    <div class="my-8"></div>
+
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         </head>
