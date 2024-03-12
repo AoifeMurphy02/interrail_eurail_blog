@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Slider; // Import the Slider model
+use App\Models\Post; 
 
 class PagesController extends Controller
 {
     public function index()
     {
-        $sliders = Slider::all(); // Assuming Slider is your model and you want to retrieve all sliders
+       $recentPosts = Post::latest()->take(2)->get();
     
-        // Pass the $sliders variable to the view
-        return view('index', ['sliders' => $sliders]);
+    return view('index', ['recentPosts' => $recentPosts]);
        
     }
 
