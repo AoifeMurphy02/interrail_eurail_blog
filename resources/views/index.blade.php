@@ -16,13 +16,12 @@
         </div>
     </div>
 
-   
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PRACK9_A5AE?si=B00G-KiLmFuI1Goj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
         <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
-                Thinking of Exploing Europe by train?
+                Thinking of Exploring Europe by train?
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
@@ -45,31 +44,30 @@
                 Find Out More
             </a>
         </div>
-
-        
     </div>
 
-        <div class="text-center py-15">
-            <h2 class="text-4xl font-bold py-10">
-                Recent Posts
-            </h2>
-            <p class="m-auto w-4/5 text-gray-500">
-                Feel free to peruse through a selection of our most sought-after posts.
-            </p>
-        </div>
-        
-        <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto">
-            @foreach ($recentPosts as $post)
-                <div class="border border-gray-200 rounded-lg">
-                    <div class="overflow-hidden">
-                        <img src="{{ asset('images/' . $post->image_path) }}" alt="{{ $post->title }}" class="w-full h-64 object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h2 class="text-gray-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
-                        <span class="text-gray-500">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
-                        <p class="text-base text-gray-700 pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
-                        <a href="/blog/{{ $post->slug }}" class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
-                    </div>
+    <div class="text-center py-15">
+        <h2 class="text-4xl font-bold py-10">
+            Recent Posts
+        </h2>
+        <p class="m-auto w-4/5 text-gray-500">
+            Feel free to peruse through a selection of our most sought-after posts.
+        </p>
+    </div>
+    
+    <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto">
+        @foreach ($recentPosts as $post)
+            <div class="border border-gray-200 rounded-lg">
+                <div class="overflow-hidden">
+                    <img src="{{ asset('images/' . $post->image_path) }}" alt="{{ $post->title }}" class="w-full h-64 object-cover">
                 </div>
-            @endforeach
-        </div>
+                <div class="p-6">
+                    <h2 class="text-gray-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
+                    <span class="text-gray-500">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
+                    <p class="text-base text-gray-700 pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
+                    <a href="/blog/{{ $post->slug }}" class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+@endsection

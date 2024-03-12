@@ -45,70 +45,54 @@
             </a>
         </div>
     </div>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        </head>
+        <body>
+          
+        <div>
+        
+            <div class="container" style="max-width: 800px;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        @foreach($sliders as $key => $slider)
+                            <div class="carousel-item {{$key == 0 ? 'active' : ''}}">
+                                <img src="{{ $slider->url }}" class="d-block w-100" alt="{{ $slider->title }}">
+                            </div>
+                        @endforeach
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
+    
     <div class="text-center py-15">
     
         <h2 class="text-4xl font-bold py-10">
             Recent Posts
         </h2>
 
-        <p class="m-auto w-4/5 text-gray-500">
-            Feel free to peruse through a selection of our most sought-after posts.
-        </p>
-    </div>
-
-    <div class="sm:grid grid-cols-2 w-4/5 m-auto">
-        <div class="text-center py-15 bg-orange-300 text-teal-700 pt-10">
-            <ul class="py-4 sm:text-s pt-4 text-teal-700">
-                <li class="pb-4"> 
-                    <a href="/blog/why-we-love-interrail-2">
-                        Why We Love InterRail
-                    </a>
-                </li>
-                <li class="pb-4"> 
-                    <a href="/blog/night-trains-do-and-don-t">
-                        Night Trains Do and Don't
-                    </a>
-                </li>
-                <li class="pb-4"> 
-                    <a href="/blog/how-to-plan-your-route">
-                        How to Plan Your Route
-                    </a>
-                </li>
-                <li class="pb-4"> 
-                    <a href="/blog/what-interrali-or-eurorail-ticket-is-best-for-you">
-                        What InterRali/EuroRail ticket is best for you
-                    </a>
-                </li>
-            </ul>
-        </div>   
-        <div>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        </head>
-        <body>
-          
-        <div>
-            <div class="container">
-          
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-              
-                    @foreach($sliders as $key => $slider)
-                        <div class="carousel-item {{$key == 0 ? 'active' : ''}}">
-                          <img src="{{ $slider->url }}" class="d-block w-100" alt="{{ $slider->title }}">
-                        </div>
-                    @endforeach
+        <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto">
+            @foreach ($recentPosts as $post)
+                <div class="border border-gray-200 rounded-lg">
+                    <div class="overflow-hidden">
+                        <img src="{{ asset('images/' . $post->image_path) }}" alt="{{ $post->title }}" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-gray-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
+                        <span class="text-gray-500">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
+                        <p class="text-base text-gray-700 pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
+                        <a href="/blog/{{ $post->slug }}" class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
+            @endforeach
         </div>
-    </div>
+           
 @endsection

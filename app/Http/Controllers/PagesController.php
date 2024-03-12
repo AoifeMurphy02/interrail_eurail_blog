@@ -20,9 +20,9 @@ class PagesController extends Controller
     {
         // Retrieve sliders data from the database or any other source
         $sliders = Slider::all(); // Assuming Slider is your model and you want to retrieve all sliders
-    
+        $recentPosts = Post::latest()->take(2)->get();
         // Pass the $sliders variable to the view
-        return view('aboutUs', ['sliders' => $sliders]);
+        return view('aboutUs', ['sliders' => $sliders],['recentPosts' => $recentPosts]);
     }
     public function gallery()
     {
