@@ -8,6 +8,7 @@
                 <h1 class="sm:text-5xl uppercase font-bold pb-14 text-orange-300 drop-shadow-md" style="filter: drop-shadow(0 0 10px rgba(8, 8, 8, 0.8));">
                     Do you want explore Europe?
                 </h1>
+                <div class="my-8"></div>
                 <a 
                     href="/blog"
                     class="text-center uppercase  bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
@@ -39,7 +40,7 @@
                  Whether you're swapping travel tips over a meal or marveling at the passing scenery together, 
                  the connections you make on the train are part of what makes the InterRail experience so special.
             </p>
-
+            <div class="my-8"></div>
             <a 
                 href="/blog"
                 class="uppercase  bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
@@ -53,9 +54,11 @@
         <h2 class="text-4xl font-bold py-10">
             Recent Posts
         </h2>
+        <div class="my-8"></div>
         <p class="m-auto w-4/5 text-gray-500">
             Feel free to peruse through a selection of our most sought-after posts.
         </p>
+        <div class="my-8"></div>
     </div>
     
     <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto">
