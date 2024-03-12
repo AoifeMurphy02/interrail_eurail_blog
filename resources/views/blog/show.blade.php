@@ -1,36 +1,40 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="w-4/5 m-auto text-left">
+
     <div class="py-15">
+        <div class="my-8"></div>
         <h1 class="text-6xl">
             {{ $post->title }}
         </h1>
-   
-        <div class="sm:grid grid-cols-2 gap-10 w-4/5 mx-left py-15 border-b border-gray-200">
-            <div>
-                <img src="{{ asset('images/' . $post->image_path) }}" alt="">
-                
+        <div class="my-8"></div>
+        <div class="sm:grid grid-cols-1 gap-10 w-full mx-left py-15 border-b border-gray-200">
+            <div class="flex items-center justify-between">
+                <div class="w-1/2 border-r border-gray-200 pr-5">
+                    <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+                </div>
+
+                <div class="w-1/2 pl-5">
+                    <p class="text-xl text-gray-700 pb-10 leading-8 font-light">
+                        {{ $post->description }}
+                    </p>
+                </div>
             </div>
 
+            <div class="w-full">
+                <p class="text-xl text-gray-700 leading-8 font-light">
+                    {!! nl2br(e($post->blog_body)) !!}
+                </p>
+            </div>
+        </div>
 
-<p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-    {{ $post->description }}
-</p>
+        <div class="w-4/5 m-auto pt-20">
+            <span class="text-gray-500">
+                By <span class="font-bold italic text-teal-700">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
+            </span>
+        </div>
+    </div>
 </div>
-<p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-    {{ $post->blog_body }}
-</p>
-
-
-</div>
-</div>
-
-<div class="w-4/5 m-auto pt-20">
-    <span class="text-gray-500">
-        By <span class="font-bold italic text-teal-700">{{ $post->user->name }}</span>, Created on {{ date('jS M Y', strtotime($post->updated_at)) }}
-    </span>
-
-  
-
-@endsection 
+@endsection

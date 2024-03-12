@@ -27,6 +27,7 @@
             Create post
         </a>
     </div>
+    <div class="my-8"></div>
 @endif
 
 <div class="sm:grid grid-cols-1 md:grid-cols-3 gap-20 w-4/5 mx-auto py-15">
