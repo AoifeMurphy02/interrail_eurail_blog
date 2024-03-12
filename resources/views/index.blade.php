@@ -52,9 +52,6 @@
 
 
     <div class="text-center py-15">
-        <span class="uppercase text-s text-gray-400">
-            Blog
-        </span>
 
         <h2 class="text-4xl font-bold py-10">
             Recent Posts
@@ -68,23 +65,23 @@
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
         <div class="text-center py-15 bg-orange-300 text-teal-700 pt-10">
             <ul class="py-4 sm:text-s pt-4 text-teal-700">
-                <li class="pb-4"> <!-- Adjusted padding -->
+                <li class="pb-4"> 
                     <a href="/blog/why-we-love-interrail-2">
                         Why We Love InterRail
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
+                <li class="pb-4"> 
                     <a href="/blog/night-trains-do-and-don-t">
                         Night Trains Do and Don't
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
-                    <a href="/">
+                <li class="pb-4"> 
+                    <a href="/blog/how-to-plan-your-route">
                         How to Plan Your Route
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
-                    <a href="/">
+                <li class="pb-4"> 
+                    <a href="/blog/what-interrali-or-eurorail-ticket-is-best-for-you">
                         What InterRali/EuroRail ticket is best for you
                     </a>
                 </li>

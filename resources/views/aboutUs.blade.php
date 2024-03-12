@@ -2,13 +2,13 @@
 
 @section('content')
 
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200 ">
         <div>
             <img src="{{ asset('aboutUs.jpg') }}" alt="Image of me">
         </div>
     
-        <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-3xl font-extrabold text-gray-600">
+        <div class="m-auto sm:m-auto text-left w-4/5 block border-8  border-orange-200 bg-orange-200">
+            <h2 class="text-3xl font-extrabold text-gray-600  ">
                 Hey guys!
             </h2>
             <p class="py-8 text-gray-500 text-s">
@@ -40,19 +40,13 @@
 
             <a 
                 href="/blog"
-                class="uppercase bg-orange-300 text-gray-100  text-s font-extrabold py-3 px-8 rounded-3xl">
+                class="uppercase bg-teal-700 text-orange-300  text-s font-extrabold py-3 px-8 rounded-3xl">
                 Find Out More
             </a>
         </div>
     </div>
-
-
-
     <div class="text-center py-15">
-        <span class="uppercase text-s text-gray-400">
-            Blog
-        </span>
-
+    
         <h2 class="text-4xl font-bold py-10">
             Recent Posts
         </h2>
@@ -65,23 +59,23 @@
     <div class="sm:grid grid-cols-2 w-4/5 m-auto">
         <div class="text-center py-15 bg-orange-300 text-teal-700 pt-10">
             <ul class="py-4 sm:text-s pt-4 text-teal-700">
-                <li class="pb-4"> <!-- Adjusted padding -->
+                <li class="pb-4"> 
                     <a href="/blog/why-we-love-interrail-2">
                         Why We Love InterRail
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
+                <li class="pb-4"> 
                     <a href="/blog/night-trains-do-and-don-t">
                         Night Trains Do and Don't
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
-                    <a href="/">
+                <li class="pb-4"> 
+                    <a href="/blog/how-to-plan-your-route">
                         How to Plan Your Route
                     </a>
                 </li>
-                <li class="pb-4"> <!-- Adjusted padding -->
-                    <a href="/">
+                <li class="pb-4"> 
+                    <a href="/blog/what-interrali-or-eurorail-ticket-is-best-for-you">
                         What InterRali/EuroRail ticket is best for you
                     </a>
                 </li>
