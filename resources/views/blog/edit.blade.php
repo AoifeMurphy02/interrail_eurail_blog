@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="w-4/5 m-auto text-left">
+    <div class="my-8"></div>
     <div class="py-15">
         <h1 class="text-6xl">
             Update Post
@@ -37,15 +38,15 @@
 
         <textarea 
             name="description"
-            placeholder="Description..."
+            placeholder="Description"
             class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->description }}</textarea> 
 
             <textarea 
             type="text"
             name="blog_body" 
-            placeholder="Blog Post ..."
+            placeholder="Blog Body"
             class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none">{{ $post->blog_body }}</textarea>
-
+            <div class="my-8"></div>
         <button    
             type="submit"
             class="uppercase  bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">

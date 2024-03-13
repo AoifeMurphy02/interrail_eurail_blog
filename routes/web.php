@@ -20,6 +20,10 @@ Route::get('/', [PagesController::class, 'index']);
 Route::get('/aboutUs', [PagesController::class, 'aboutUs']);
 Route::get('/gallery', [PagesController::class, 'gallery']);
 Route::get('/blog/search', [PostsController::class, 'index'])->name('posts.search');
+Route::get('/blog/sort', [PostsController::class, 'sort'])->name('posts.sort');
+
+Route::resource('/blog', PostsController::class);
+
 
 Route::get('/blog', [PostsController::class, 'index'])->name('posts.index');
 

@@ -13,7 +13,7 @@
         <div class="sm:grid grid-cols-1 gap-10 w-full mx-left py-15 border-b border-gray-200">
             <div class="flex items-center justify-between">
                 <div class="w-1/2 border-r border-gray-200 pr-5">
-                    <img src="{{ asset('images/' . $post->image_path) }}" alt="">
+                    <img src="{{ asset('images/' . $post->image_path) }}" alt="" class="w-full h-75 object-cover rounded-lg">
                 </div>
 
                 <div class="w-1/2 pl-5">

@@ -33,9 +33,22 @@ class PostsController extends Controller
  
          return view('blog.index')->with('posts', $posts);
      }
+     
+     public function sort(Request $request)
+{
+    $sortBy = $request->query('sort');
     
+    // Default sort order to 'desc' if not provided or invalid
+    if (!in_array($sortBy, ['asc', 'desc'])) {
+        $sortBy = 'asc';
+    }
+    $posts = Post::orderBy('updated_at', $sortBy)->get();
 
-    
+    return view('blog.index')->with('posts', $posts);
+}
+
+     
+
 
     
 

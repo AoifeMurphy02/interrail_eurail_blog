@@ -20,11 +20,11 @@
                         </label>
 
                         <input id="email" type="email"
-                            class="form-input w-full @error('email') border-red-500 @enderror" name="email"
+                            class="form-input w-full @error('email') border-teal-700 @enderror" name="email"
                             value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @error('email')
-                        <p class="text-red-500 text-xs italic mt-4">
+                        <p class="text-teal-700 text-xs italic mt-4">
                             {{ $message }}
                         </p>
                         @enderror
@@ -36,11 +36,11 @@
                         </label>
 
                         <input id="password" type="password"
-                            class="form-input w-full @error('password') border-red-500 @enderror" name="password"
+                            class="form-input w-full @error('password') border-teal-800 @enderror" name="password"
                             required>
 
                         @error('password')
-                        <p class="text-red-500 text-xs italic mt-4">
+                        <p class="text-teal-700 text-xs italic mt-4">
                             {{ $message }}
                         </p>
                         @enderror

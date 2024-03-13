@@ -30,25 +30,37 @@
     <div class="my-8"></div>
 @endif
 
-<div class="w-4/5 m-auto pt-4">
-    <form action="{{ route('posts.search') }}" method="GET">
+<div class="flex justify-between items-center mb-4">
+    <form action="{{ route('posts.search') }}" method="GET" autocomplete="off" class="flex">
         <input 
             type="text" 
             name="search" 
-            class="bg-gray-200 rounded-full w-3/4 py-3 px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+            class="bg-gray-200 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-300 mr-4" 
             placeholder="Search by title...">
         <button 
             type="submit" 
-            class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Search
+            class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-2 px-6 rounded-full">Search
         </button>
     </form>
+    
+    <form action="{{ route('posts.sort') }}" method="GET" id="sortForm" class="flex items-center">
+        <label for="sort" class="text-gray-700 mr-2">Sort by Date:</label>
+        <select name="sort" id="sort" class="bg-gray-200 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-300 mr-4" onchange="document.getElementById('sortForm').submit()">
+            <option value="asc" @if(request('sort') == 'asc') selected @endif>Oldest to Newest</option>
+            <option value="desc" @if(request('sort') == 'desc') selected @endif>Newest to Oldest</option>
+        </select>
+       
+    </form>
 </div>
+    
+    
+    <div class="my-8"></div> 
 
-<div class="sm:grid grid-cols-1 md:grid-cols-3 gap-20 w-4/5 mx-auto py-15">
+<div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto py-15 rounded-lg">
 @foreach ($posts as $post)
-    <div class="border border-gray-200 rounded-lg">
+<div class="border border-gray-200 rounded-lg">
         <div class="overflow-hidden">
-            <img src="{{ asset('images/' . $post->image_path) }}" alt="" class="w-full h-64 object-cover">
+            <img src="{{ asset('images/' . $post->image_path) }}" alt="" class="w-full h-64 object-cover rounded-t-lg">
         </div>
         <div class="p-6">
             <h2 class="text-teal-700 font-bold text-xl pb-4">
