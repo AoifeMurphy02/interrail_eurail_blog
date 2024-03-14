@@ -63,15 +63,15 @@
     
     <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto">
         @foreach ($recentPosts as $post)
-            <div class="border border-gray-200 rounded-lg">
+            <div class="border border-gray-200 rounded-lg bg-orange-200">
                 <div class="overflow-hidden">
                     <img src="{{ asset('images/' . $post->image_path) }}" alt="{{ $post->title }}" class="w-full h-64 object-cover">
                 </div>
                 <div class="p-6">
-                    <h2 class="text-gray-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
-                    <span class="">By <span class="font-bold italic text-gray-800">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
+                    <h2 class="text-teal-700 font-bold text-xl pb-4">{{ $post->title }}</h2>
+                    <span class="">By <span class="font-bold italic text-teal-700">{{ $post->user->name }}</span>, Created on {{ $post->created_at->format('jS M Y') }}</span>
                     <p class="text-base pt-4 pb-6 leading-7 font-light">{{ $post->description }}</p>
-                    <a href="/blog/{{ $post->slug }}" class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
+                    <a href="/blog/{{ $post->slug }}" class="uppercase bg-teal-700 text-orange-300 text-s font-extrabold py-3 px-8 rounded-3xl">Keep Reading</a>
                 </div>
             </div>
         @endforeach

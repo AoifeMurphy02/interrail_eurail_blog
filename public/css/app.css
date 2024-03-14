@@ -20468,6 +20468,23 @@ video {
   transform: scale(1.2);
 }
 
+input[type=text] {
+  width: 130px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 110%;
+}
+
+.gallZoom{
+  margin: 0 auto;
+}
+
+.gallZoom:hover{
+  transform: scale(1.1);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -99711,4 +99728,3 @@ video {
     animation: bounce 1s infinite;
   }
 }
-  

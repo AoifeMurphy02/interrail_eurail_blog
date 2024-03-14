@@ -28,11 +28,7 @@
                 I set out to establish a one-stop-shop—a digital sanctuary designed to cater to the diverse needs and aspirations
                  of budding explorers and seasoned adventurers alike.
             </p>
-            <p class="py-8 text-teal-700 text-s">
-                With a focus on fostering a vibrant community spirit and facilitating meaningful 
-                 interactions, my goal was to curate a repository of knowledge, insights, 
-                 and practical wisdom sourced directly from the collective experiences of fellow travelers.
-            </p>
+        
             <p class="py-8 text-teal-700 text-s">
                 Recognizing the boundless potential for discovery and the myriad of adventures awaiting discovery across Europe's 
                 picturesque landscapes and culturally rich destinations, I sought to create a platform that would serve as a beacon of inspiration 
