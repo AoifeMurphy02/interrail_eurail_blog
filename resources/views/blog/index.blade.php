@@ -18,7 +18,7 @@
     </div>
 @endif
 <div class="my-8"></div>
-
+<div class="flex justify-between ">
 @if (Auth::check())
     <div class="pt-15 w-4/5 m-auto">
         <a 
@@ -27,10 +27,10 @@
             Create post
         </a>
     </div>
-    <div class="my-8"></div>
+   
 @endif
 
-<div class="flex justify-between items-center mb-4">
+
     <form action="{{ route('posts.search') }}" method="GET" autocomplete="off" class="flex">
         <input 
             type="text" 

@@ -4,8 +4,9 @@
 <div class="my-8"></div>
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200 ">
+        
         <div>
-            <img src="{{ asset('aboutUs.jpg') }}" alt="Image of me">
+            <img src="{{ asset('aboutUs.jpg') }}" alt="Image of me" class="zoomAboutUs">
         </div>
     
         <div class="m-auto sm:m-auto text-left w-4/5 block border-8  border-orange-200 bg-orange-200">
@@ -28,7 +29,7 @@
                  of budding explorers and seasoned adventurers alike.
             </p>
             <p class="py-8 text-teal-700 text-s">
-             With a focus on fostering a vibrant community spirit and facilitating meaningful 
+                With a focus on fostering a vibrant community spirit and facilitating meaningful 
                  interactions, my goal was to curate a repository of knowledge, insights, 
                  and practical wisdom sourced directly from the collective experiences of fellow travelers.
             </p>
@@ -38,12 +39,13 @@
                 and a trusted resource for anyone with a thirst for adventure and a curiosity to explore beyond their comfort zones.
                    
             </p>
-
+            <div class="my-8"></div>
             <a 
                 href="/blog"
                 class="uppercase bg-teal-700 text-orange-300  text-s font-extrabold py-3 px-8 rounded-3xl">
                 Find Out More
             </a>
+            <div class="my-8"></div>
         </div>
     </div>
     <div class="my-8"></div>
