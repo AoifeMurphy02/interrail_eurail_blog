@@ -66,5 +66,49 @@
     transform: scale(1.1); 
   }
 
+  .login-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
 
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form textarea {
+    height: 100px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.login-form button[type="reset"] {
+    background-color: #ccc;
+    color: #000;
+    margin-top: 10px;
+}
+
+.alert {
+    margin-bottom: 20px;
+}
 
