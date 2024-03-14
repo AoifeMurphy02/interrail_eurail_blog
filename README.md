@@ -1,4 +1,6 @@
 ## Laravel Interrail and Eurorail Blog
+![Alt Text](https://i.pinimg.com/originals/49/a8/5f/49a85ff2855bbce54d4229ff75fa14a2.gif)
+
 
  This youtube video(https://www.youtube.com/watch?v=HKJDLXsTr8A&t=4710s) linked with this github repo (git@github.com:codewithdary/laravel-8-complete-blog.git) was uses as starter code for this project
 
@@ -11,9 +13,8 @@
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
 ```
-git clone git@github.com:codewithdary/laravel-8-complete-blog.git
-cd laravel-8-complete-blog
-cp .env.example .env
+git clone https://github.com/AoifeMurphy02/interrail_eurail_blog.git
+cd interrail_eurail_blog
 composer install
 php artisan key:generate
 php artisan cache:clear 
