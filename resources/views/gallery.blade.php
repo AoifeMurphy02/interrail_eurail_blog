@@ -11,7 +11,7 @@
           <img
             alt="gallery"
             class="block h-full w-full rounded-lg object-cover object-center gallZoom"
-            src="https://thumbs.dreamstime.com/b/young-happy-woman-facing-eiffel-tower-paris-france-attractive-hands-up-35173107.jpg" />
+            src="https://media4.giphy.com/media/26FL4XJW4FcnO2i4g/200w.gif?cid=6c09b952fvllmddhlj21tjtv75a0ofh74tn15miyhvg7tnts&ep=v1_gifs_search&rid=200w.gif&ct=g" />
         </div>
         <div class="w-1/2 p-1 md:p-2">
           <img

@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <style>
-        .text-center {
-            text-align: center;
-        }
-       
-    </style>
-</head>
-<body>
-
 @extends('layouts.app')
 
 @section('content')
@@ -65,14 +50,22 @@ function initMap() {
             });
         }
 
-  /* ---------------------------- Add Marker ---------------------------------- */
+ /* ---------------------------- Add Marker ---------------------------------- */
 function addMarker(location, id) {
     console.log("Adding marker with ID:", id);
+
+    const markerIcon = {
+        url: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M15 12.423L16.577 14v1H12.5v5l-.5.5l-.5-.5v-5H7.423v-1L9 12.423V5H8V4h8v1h-1z"/></svg>'),
+        scaledSize: new google.maps.Size(24, 24), // Adjust the size if needed
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(12, 24) // Adjust the anchor point if needed
+    };
 
     const marker = new google.maps.Marker({
         position: location,
         map: map,
-        draggable: true
+        draggable: true,
+        icon: markerIcon // Set the marker icon
     });
     markers[id] = marker;
 
@@ -82,8 +75,9 @@ function addMarker(location, id) {
     }
 
     // Content for the infowindow including the Remove button
-    const content = `<b>${location.lat()}, ${location.lng()}</b><br><button class="remove-btn" onclick="removeMarker(${id})">Remove</button>`;
-    marker.infowindow.setContent(content);
+// Content for the infowindow including the Remove button
+const content = `<div class="infowindow"><b>${location.lat()}, ${location.lng()}</b><br><button class="remove-btn" onclick="removeMarker(${id})">Remove</button></div>`;
+marker.infowindow.setContent(content);
 
     marker.addListener("click", () => {
         if (marker.infowindow.getMap()) {

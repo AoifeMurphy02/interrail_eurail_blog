@@ -26,6 +26,7 @@
     height: 900px;
 }
 
+
 .zoom {
     padding: 50px;
     transition: transform .2s; 
@@ -64,3 +65,6 @@
   .gallZoom:hover{
     transform: scale(1.1); 
   }
+
+
+
