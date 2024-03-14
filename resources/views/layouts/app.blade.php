@@ -33,6 +33,7 @@
                     <a class="no-underline hover:underline text-orange-300 font-bold py-10" href="/blog">Blog</a>
                     <a class="no-underline hover:underline text-orange-300 font-bold py-10" href="/aboutUs" >About Us</a>
                     <a class="no-underline hover:underline text-orange-300 font-bold py-10" href="/map" >Map</a>
+                    <a class="no-underline hover:underline text-orange-300 font-bold py-10" href="/contactUs" >Contact Us</a>
                     <a class="no-underline hover:underline text-orange-300 font-bold py-10" href="/gallery" >Gallery</a>
                  
                     @guest
