@@ -49,13 +49,17 @@ public function contactUs(){
         ]);
 
         $contactUs = [
-            'fullname' => $request['fullname'], 
+            'fullname' => $request['fullname'],
             'email' => $request['email'],
             'phone_number' => $request['phone_number'],
             'subject' => $request['subject'],
             'message' => $request['message'],
-            'screenshot' => $request->file('screenshot')->store('contact', 'public')
         ];
+        
+        if ($request->hasFile('screenshot')) {
+            $contactUs['screenshot'] = $request->file('screenshot')->store('contact', 'public');
+        }
+        
 
     
         Mail::to('aoifetaram@gmail.com')->send(new ContactFormMail($contactUs));

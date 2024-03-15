@@ -55,7 +55,7 @@ function addMarker(location, id) {
     console.log("Adding marker with ID:", id);
 
     const markerIcon = {
-        url: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M15 12.423L16.577 14v1H12.5v5l-.5.5l-.5-.5v-5H7.423v-1L9 12.423V5H8V4h8v1h-1z"/></svg>'),
+        url: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="black" d="M13 8V2a2 2 0 0 0 2-2H5a2 2 0 0 0 2 2v6H6a2 2 0 0 0-2 2v1h5v5l1 4l1-4v-5h5v-1a2 2 0 0 0-2-2z" /></svg>'),
         scaledSize: new google.maps.Size(24, 24), // Adjust the size if needed
         origin: new google.maps.Point(0, 0),
         anchor: new google.maps.Point(12, 24) // Adjust the anchor point if needed
@@ -76,7 +76,7 @@ function addMarker(location, id) {
 
     // Content for the infowindow including the Remove button
 // Content for the infowindow including the Remove button
-const content = `<div class="infowindow"><b>${location.lat()}, ${location.lng()}</b><br><button class="remove-btn" onclick="removeMarker(${id})">Remove</button></div>`;
+const content = `<div id="infowindow"><b>${location.lat()}, ${location.lng()}</b><br><button class="remove-btn" onclick="removeMarker(${id})">Remove</button></div>`;
 marker.infowindow.setContent(content);
 
     marker.addListener("click", () => {
