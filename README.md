@@ -24,6 +24,21 @@
 <br>
 • MailHog <img src="https://media.licdn.com/dms/image/D5612AQE6B2VBO7Cdtw/article-cover_image-shrink_600_2000/0/1688551272350?e=2147483647&v=beta&t=MVtXLjm5a6dvclCE6NymXnCAkv4eruCupdV_KUJGSEM" alt="alt text" width="30">
 
+## Features 
+• View blog posts about Interrail and eurail.
+<br>
+• Create, Edit and Delete blog posts.
+<br>
+• Plan your trip using pins on google maps tells the user the distance between pins.
+<br>
+<img src="https://i.imgur.com/V2OQ66B.png" alt="alt text" width="600">
+<br>
+• Contact Us page. 
+<br>
+• Gallery Page including a carousel.
+<br>
+
+
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
 ```
@@ -58,6 +73,20 @@ Migrate the tables
 ```
 php artisan migrate
 ```
+<br>
+
+## To compile laravel mix
+
+```
+composer require laravel-frontend-presets/tailwindcss --dev
+php artisan ui tailwindcss --auth
+npm remove laravel-mix
+npm install laravel-mix --save-dev
+npm install cross-env --save-dev
+npm run watch
+```
+
+
 ### Running MailHog  <img src="https://media.licdn.com/dms/image/D5612AQE6B2VBO7Cdtw/article-cover_image-shrink_600_2000/0/1688551272350?e=2147483647&v=beta&t=MVtXLjm5a6dvclCE6NymXnCAkv4eruCupdV_KUJGSEM" alt="alt text" width="50">
 You can download MailHog from the [official GitHub releases page](https://github.com/mailhog/MailHog/releases).
 
@@ -68,4 +97,4 @@ After downloading MailHog:
 2. **Access MailHog Web Interface**: MailHog provides a web interface for managing emails. To access it, open your web browser and navigate to [http://localhost:8025/](http://localhost:8025/).
 
 ## Contributing
-Do not hesitate to contribute to the project by adapting or adding features ! Bug reports or pull requests are welcome.
+Do not hesitate to contribute to the project by adapting or adding features Bug reports or pull requests are welcome.
