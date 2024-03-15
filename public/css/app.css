@@ -20430,6 +20430,20 @@ video {
   background-attachment: fixed;
   background-size: cover;
   height: 230px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-image {
+    height: 100px;
+  }
 }
 
 .login-background-image 
@@ -20553,11 +20567,21 @@ nav.active {
 
 @media (max-width: 768px) {
   #app header nav {
-    display: none; /* Hide navigation links by default on smaller screens */
+    display: none;
   }
 
   .burger-menu {
-    display: flex; /* Show burger menu icon */
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
