@@ -5,7 +5,8 @@
 
 <div class="row justify-content-center">
     <div class="col-xl-7 col-lg-8 col-md-8">
-        <div class="section-title">
+        <div class="section-title text-6xl">
+         
             <h2>Contact Us</h2>
         </div>
     </div>
@@ -15,7 +16,7 @@
 <div class="row justify-content-center">
     <div class="col-xl-8 col-lg-8 col-md-8">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Success ! </strong>  &nbsp; {{ session('status') }}
+            <strong>Success! </strong>  &nbsp; {{ session('status') }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -24,16 +25,16 @@
 </div>
 @endif
 
-<div class="row justify-content-center">
-    <div class="col-xl-8 col-lg-8">
-        <div class="login-form">
-            <form method="POST" action="{{ route('addContact') }}" enctype="multipart/form-data">
+<div class="row justify-content-center ">
+    <div class="col-xl-8 col-lg-8 ">
+        <div class="login-form ">
+            <form method="POST" action="{{ route('addContact') }}" enctype="multipart/form-data " >
 
                 @csrf
-                <div class="row">
+                <div class="row ">
 
-                    <div class="col-6">
-                        <div class="form-group">
+                    <div class="col-6 ">
+                        <div class="form-group ">
                             <label for="name" class="col-form-label text-md-right">{{ __('Full Name') }}</label>
 
                             <input type="text" class="form-control @error('fullname') is-invalid @enderror" name="fullname" value="{{ isset(Auth::user()->firstname) ? Auth::user()->firstname : '' }} {{ isset(Auth::user()->lastname) ? Auth::user()->lastname : '' }}" required autocomplete="Fullname" autofocus>
@@ -118,12 +119,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="my-8"></div>
 
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">
                         <button type="submit" class="btn btn-primary">
                             {{ __('Send Message') }}
                         </button>
+                        
                         <button type="reset" class="btn btn-secondary">
                             {{ __('Reset Form') }}
                         </button>

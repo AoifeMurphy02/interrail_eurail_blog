@@ -20486,10 +20486,19 @@ input[type=text]:focus {
 }
 
 .login-form {
-  background-color: #f9f9f9;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/58/1799_Clement_Cruttwell_Map_of_Europe_-_Geographicus_-_Europe-cruttwell-1799.jpg');
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(15 118 110);
 }
 
 .login-form input[type="text"],
@@ -20509,26 +20518,47 @@ input[type=text]:focus {
 }
 
 .login-form button {
-  width: 100%;
+  width: 45%;
   padding: 10px;
   border: none;
   border-radius: 5px;
+  text-align: center;
   cursor: pointer;
 }
 
 .login-form button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: rgb(15 118 110);
+  color: rgb(253 186 116);
 }
 
 .login-form button[type="reset"] {
   background-color: #ccc;
-  color: #000;
+  color: rgb(15 118 110);
   margin-top: 10px;
 }
 
 .alert {
   margin-bottom: 20px;
+}
+
+.burger-menu {
+  display: none; /* Hide burger menu by default */
+  cursor: pointer;
+}
+
+nav.active {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #app header nav {
+    display: none; /* Hide navigation links by default on smaller screens */
+  }
+
+  .burger-menu {
+    display: flex; /* Show burger menu icon */
+  }
 }
 
 @media (min-width: 640px) {
