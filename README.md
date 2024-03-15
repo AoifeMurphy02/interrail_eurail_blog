@@ -27,7 +27,11 @@
 ## Features 
 • View blog posts about Interrail and eurail.
 <br>
+<img src="https://i.imgur.com/l9QroXj.png" alt="alt text" width="600">
+<br>
 • Create, Edit and Delete blog posts.
+<br>
+<img src="https://i.imgur.com/thVVd0k.png" alt="alt text" width="600">
 <br>
 • Plan your trip using pins on google maps tells the user the distance between pins.
 <br>
@@ -35,9 +39,14 @@
 <br>
 • Contact Us page. 
 <br>
+<img src="https://i.imgur.com/rrxdZdw.png" alt="alt text" width="600">
+<br>
 • Gallery Page including a carousel.
 <br>
-
+<img src="https://i.imgur.com/skpfyAA.png" alt="alt text" width="600">
+<br>
+## Video Runthrough of the Project <img src="https://i.pngimg.me/thumb/f/720/m2i8m2b1Z5A0A0N4.jpg" alt="alt text" width="40">
+https://www.youtube.com/watch?v=qsWxp_75LnA
 
 ## Usage <br>
 Setting up your development environment on your local machine: <br>
@@ -75,7 +84,7 @@ php artisan migrate
 ```
 <br>
 
-## To compile laravel mix
+## To compile laravel mix <img src="https://since1979.dev/wp-content/uploads/2019/05/laravel-mix-logo.jpeg" alt="alt text" width="50">
 
 ```
 composer require laravel-frontend-presets/tailwindcss --dev
