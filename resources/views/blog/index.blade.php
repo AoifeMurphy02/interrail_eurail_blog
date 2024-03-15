@@ -18,41 +18,38 @@
     </div>
 @endif
 <div class="my-8"></div>
-<div class="flex justify-between ">
-@if (Auth::check())
-    <div class="pt-15 w-4/5 m-auto">
-        <a 
-            href="/blog/create"
-            class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
-            Create post
-        </a>
-    </div>
-   
-@endif
 
+<div class="flex justify-between">
+    @if (Auth::check())
+        <div class="pt-15 w-4/5 m-auto">
+            <a 
+                href="/blog/create"
+                class="uppercase bg-orange-300 text-teal-700 text-s font-extrabold py-3 px-8 rounded-3xl">
+                Create post
+            </a>
+        </div>
+    @endif
 
     <form action="{{ route('posts.search') }}" method="GET" class="flex">
         <input 
             type="text" 
             name="search" 
-            class="rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-300 mr-4 bg-orange-200 text-teal-700 " 
+            class="rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-300 mr-4 bg-orange-200 text-teal-700" 
             placeholder="Search by title">
-      
     </form>
+
     <div class="my-3"></div>  
+
     <form action="{{ route('posts.sort') }}" method="GET" id="sortForm" class="flex items-center">
-        <label for="sort" class= " text-teal-700 mr-2">Sort by Date:</label>
+        <label for="sort" class="text-teal-700 mr-2">Sort by Date:</label>
         <select name="sort" id="sort" class="text-orange-300 bg-teal-700 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-orange-300 mr-4" onchange="document.getElementById('sortForm').submit()">
-            <option  value="asc" @if(request('sort') == 'asc') selected @endif>Old to New</option>
+            <option value="asc" @if(request('sort') == 'asc') selected @endif>Old to New</option>
             <option value="desc" @if(request('sort') == 'desc') selected @endif>New to Old</option>
         </select>
-       
     </form>
 </div>
-    
-    
-    <div class="my-8"></div> 
 
+<div class="my-8"></div>
 <div class="sm:grid grid-cols-1 md:grid-cols-2 gap-20 w-4/5 mx-auto py-15 rounded-lg ">
 @foreach ($posts as $post)
 <div class="border border-gray-200 rounded-lg bg-orange-200">
